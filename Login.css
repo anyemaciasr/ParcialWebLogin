@@ -22,9 +22,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(255, 255, 255, 0.276);
+    border: 2px  rgba(255, 255, 255, 0.276);
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
 }
 .title{
     font-size: 40px;
@@ -54,11 +54,16 @@ section{
     transition: .5s;
 }
 
+::-ms-reveal {
+    display: none;
+}
+
 
 input:focus ~ label,
 input:valid ~ label{
-top: -5px;
+    top: -5px;
 }
+
 
 .inputbox input{
     width: 100%;
@@ -87,13 +92,13 @@ top: -5px;
 }
 .forget label input{
     margin-right: 3px;
-    
+        
 }
-.forget label a{
+.forget a{
     color: #fff;
     text-decoration: none;
 }
-.forget label a:hover{
+.forget a:hover{
     text-decoration: underline;
 }
 button{
